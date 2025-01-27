@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    padding: 50px;
+    box-sizing: 0;
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #26355D;
+    color: #FBFBFB;
+
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+#content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr;
+}
+.listDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.ul_list{
+    list-style: none;
+    gap: 5px;
+}
+.stocks_botton{
+    background-color: #1e90ff; /* Button base color */
+    color: white; /* Text color */
+    height: 40px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.stocks_botton::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 144, 255, 0.5);
+    filter: blur(15px);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.stocks_botton:hover::before{
+    opacity: 1;
+}
+.stocks_botton:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); /* Glowing shadow */
+  }
+  .durationBtn{
+    background-color: #1e90ff; /* Button base color */
+    color: white; /* Text color */
+    height: 35px;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+.durationBtn::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(30, 144, 255, 0.5);
+    filter: blur(15px);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+}
+.durationBtn:hover::before{
+    opacity: 1;
+}
+.durationBtn:hover {
+    transform: scale(1.05); /* Slight scaling on hover */
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); /* Glowing shadow */
+  }
+  .BtnsDiv{
+    display: flex;
+    gap:20px;
+    justify-content: center;
+    margin-right: 50px;
+  }
+.chart_sec{
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:900px)  {
+    #content{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:650px){
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    #content{
+        display: grid;
+        
+
+    }
+
+}
