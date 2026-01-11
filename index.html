@@ -3,26 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stocks</title>
+    <title>Stock Market Analysis</title>
+
     <link rel="stylesheet" href="./style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-<script src="https://cdn.plot.ly/plotly-2.35.2.min.js" charset="utf-8"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+    <script src="./index.js" defer></script>
 </head>
 <body>
+
     <header>
         <h1>Stock Market Analysis</h1>
     </header>
-    <div id="content">
-    <div id="chart_sec">
-        <div id="my_chart"></div>
-    </div>
-    <div id="List_section">
-       
-    </div>
-    <div id="Details_section"></div>
-    </div>
-    <script src="./index.js"></script>
+
+    <main id="content">
+        <section id="chart_sec">
+            <div id="my_chart" aria-label="Stock price chart"></div>
+        </section>
+
+        <section id="list-section"></section>
+        <section id="details-section"></section>
+    </main>
+
 </body>
 </html>
